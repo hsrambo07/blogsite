@@ -23,7 +23,8 @@ import blogsite.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',jobs.views.home, name='home'),
-    path('blog/',blogsite.views.Blog, name='blog')
+    path('blog/',blogsite.views.blog, name='blog')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
    
 
+ 

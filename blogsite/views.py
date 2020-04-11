@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import Blogsite
+from .models import Blog
 
 # Create your views here.
 
-def Blog(request):
-    blogsite=Blogsite.objects
-    return render(request,'blog.html',{'Blogsite':Blogsite})
+def blog(request):
+    blogs=Blog.objects
+    return render(request,'blog.html',{'blogs':blogs})
     
