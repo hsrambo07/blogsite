@@ -19,15 +19,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 import jobs.views 
 import blogsite.views
+import again.views
 
-import newpage.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',jobs.views.home, name='home'),
     path('blog/',blogsite.views.blog, name='blog'),
 
-    path('newblog/',newpage.views.home,name='bloghome'),
+    path('again/',again.views.home,name='bloghome'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
    
