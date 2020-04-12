@@ -1,6 +1,6 @@
-my name is harsh
-{% for blog in myblog.all %}
 
-{{%blog.id%}}
-
-{% endfor %}
+<h3>Titke of the blog</h3>
+<h1>{{myblog.title}}</h1>
+<br>
+<img src='{{myblog.image.url}}' height='200px' width='200px'>
+<h4>{{myblog.body}}</h4>

@@ -8,9 +8,9 @@ def blog(request):
     return render(request,'blog.html',{'blogs':blogs})
     
 
-def detail(request,blog_id):
-    myblog=Blog.objects
-    detailblog=get_object_or_404(Blog, pk=blog_id)
+def detail(request,id):
+ 
+    detailblog=get_object_or_404(Blog, pk=id)
     return render(request,'det.html',{'myblog':detailblog})
 
 

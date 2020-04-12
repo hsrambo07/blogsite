@@ -29,7 +29,7 @@ urlpatterns = [
     
     path('again/',again.views.home,name='bloghome'),
     
-    path('blog/<int:blog_id>/',blogsite.views.detail,name='detail'),
+    path('blog/<int:id>/',blogsite.views.detail,name='detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
    
 
