@@ -26,9 +26,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',jobs.views.home, name='home'),
     path('blog/',blogsite.views.blog, name='blog'),
-
+    
     path('again/',again.views.home,name='bloghome'),
-
+    
+    path('blog/<int:blog_id>/',blogsite.views.detail,name='detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
    
 

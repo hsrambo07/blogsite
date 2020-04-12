@@ -5,6 +5,7 @@ sd
 {% for page in pages.all %}
 
 
-<img src='{{page.image.url}}'>'
-<p>{{page.summary}}</p>
+<a href='https://google.com'><img src='{{page.image.url}}'></a>
+<p>{{page.pub_date_pretty}}</p>
+<p>{{page.body}}</p>
 {% endfor %}
