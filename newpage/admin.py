@@ -2,6 +2,6 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import BLOG
+from .models import page
 
-admin.site.register(BLOG)
+admin.site.register(page)
